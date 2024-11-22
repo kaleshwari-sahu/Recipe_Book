@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="bh_file.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="https://mrehanamjad.github.io/coding-quiz-app/images/Home.png" alt="">
+        </a>
+        <h1>Bhopal Food</h1>
+    </nav>
+
+    <section id="recipeees">
+        <article id="Shahi Tukda">
+            <h2>Shahi Tukda</h2>
+            <img src="https://www.felicityplus.com/wp-content/uploads/2020/05/shahi-tukda-40.jpg" alt="Shahi Tukda">
+            <p>Shahi Tukda is a rich and royal dessert made with fried bread soaked in sugar syrup and topped with creamy rabri.</p>
+            <a href="index1.html" class="button-link">Read More</a>
+            <!-- Add recipe details here -->
+        </article>
+
+        <article id="Lamb Keema Carry">
+            <h2>Lamb Keema Carry</h2>
+            <img src="https://www.tamingtwins.com/wp-content/uploads/2023/01/lamb-keema-recipe-8.jpg" alt="Lamb Keema Carry">
+            <p>Lamb Keema Curry is a flavorful dish made with minced lamb cooked in aromatic spices and served with rice or bread.</p>
+            <a href="index2.html" class="button-link">Read More</a>
+            <!-- Add recipe details here -->
+        </article>
+
+        <article id="Barfi Malai">
+            <h2>Barfi Malai</h2>
+            <img src="https://blog.swiggy.com/wp-content/uploads/2024/02/Barfi-Rasmalai-1024x538.jpg" alt="Barfi Malai">
+            <p>Bhajia is a deep-fried snack made from gram flour and various vegetables.</p>
+            <a href="index3.html" class="button-link">Read More</a>
+            <!-- Add recipe details here -->
+        </article>
+
+        <article id="Til Mawa Bati">
+            <h2>Til Mawa Bati</h2>
+            <img src="https://img-global.cpcdn.com/recipes/d999d6b2ce1dce29/680x482cq70/%E0%A4%A4%E0%A4%B2-%E0%A4%AE%E0%A4%B5-%E0%A4%AC%E0%A4%9F-til-mawa-bati-recipe-in-hindi-%E0%A4%B0%E0%A4%B8%E0%A4%AA-%E0%A4%AE%E0%A4%96%E0%A4%AF-%E0%A4%A4%E0%A4%B8%E0%A4%B5%E0%A4%B0.jpg" alt="Til Mawa Bati">
+            <p>Til Mawa Bati is a traditional sweet made with sesame seeds and mawa, shaped into balls and often enjoyed during festivals.</p>
+            <a href="index4.html" class="button-link">Read More</a>
+            <!-- Add recipe details here -->
+        </article>
+
+        <article id="Paya Soup">
+            <h2>Paya Soup</h2>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/09/paya-soup1.jpg" alt="Paya Soup">
+            <p>Paya Soup is a nourishing and flavorful broth made from slow-cooked lamb trotters, infused with aromatic spices.</p>
+            <a href="index5.html" class="button-link">Read More</a>
+            <!-- Add recipe details here -->
+        </article>
+        
+    
+    </section>
+
+    <section id="search">
+        <h2>Search Recipes</h2>
+        <input type="text" id="search-bar" placeholder="Search by name or ingredients...">
+    </section>
+ 
+    <button id="toggle-form-btn">Add Recipe</button>
+
+    <div id="recipe-form-container" style="display: none;">
+        <h2>Add a New Recipe</h2>
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <input type="text" id="recipe-ingredients" placeholder="Ingredients (comma separated)" required>
+            <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+            <input type="text" id="recipe-image" placeholder="Image URL (optional)">
+            <input type="text" id="recipe-video" placeholder="Video URL (optional)">
+            <button type="submit">Add Recipe</button>
+        </form>
+    </div>
+
+    <div id="recipe-lightbox" class="lightbox" style="display: none;">
+        <div class="lightbox-content">
+            <span class="close-btn">&times;</span>
+            <div class="lightbox-header">
+                <img id="lightbox-recipe-image" src="" alt="Recipe Image">
+                <div class="lightbox-info">
+                    <h1 id="lightbox-recipe-title"></h1>
+                    <p id="lightbox-recipe-video-container"></p>
+                </div>
+            </div>
+            <div class="lightbox-details">
+                <div class="lightbox-ingredients">
+                    <h3>Ingredients</h3>
+                    <p id="lightbox-recipe-ingredients"></p>
+                </div>
+                <div class="lightbox-instructions">
+                    <h3>Instructions</h3>
+                    <p id="lightbox-recipe-instructions"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <section id="recipe-list">
+        <h2>Your Recipes</h2>
+        <div id="recipes"></div>
+    </section>
+
+    <script src="bh_file.js"></script>
+</body>
+</html>
